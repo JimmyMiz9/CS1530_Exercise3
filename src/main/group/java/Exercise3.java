@@ -10,10 +10,12 @@ public class Exercise3 {
 	}
 	
 	public int lazySeq(int n){
-		return Math.pow(n, 2);
+		return (int)(Math.pow(n, 2) + n + 2) / 2;
 	}
 	public static void main(String[] args) {
-		Exercise3 tri = new Exercise3();
-		System.out.println(tri.triangularNumberSeq(5));
+		Exercise3 seq = new Exercise3();
+		System.out.println(seq.triangularNumberSeq(5));
+		System.out.println(seq.lazySeq(5));
+		
 	}
 }
