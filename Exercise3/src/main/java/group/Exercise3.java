@@ -1,4 +1,4 @@
-package group;
+package main.java.group;
 
 public class Exercise3 {
 	public static int triangularNumberSeq(int n){
