@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-mainClassName = "group.java.Exercise3"
+mainClassName = "main.java.group.Exercise3"
 
 repositories {
 	mavenCentral()
@@ -9,4 +9,14 @@ repositories {
 
 dependencies {
 	testCompile 'junit:junit:4.12'
+}
+
+run {
+    try {
+        systemProperties System.getProperties()
+	args System.getProperty("args").split()
+    } catch (Exception e) {
+        // println "Please add -Dargs=\"...\" even if it is empty"
+    }
+	
 }
