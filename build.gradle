@@ -20,3 +20,8 @@ run {
     }
 	
 }
+
+task sequencehelp << {
+	println "Integer Sequence Project"
+	println "Gives an integer n as an argument, displays Tri(n) and LC(n)."
+}
