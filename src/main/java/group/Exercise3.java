@@ -22,8 +22,8 @@ public class Exercise3 {
 			try {
 				int x = triangularNumberSeq(Integer.parseInt(args[0]));
 				int y = lazySeq(Integer.parseInt(args[0]));
-				System.out.println("Tri(n) =" + x);
-				System.out.println("Lazy(n) =" +y);
+				System.out.println("Tri(n) = " + x);
+				System.out.println("Lazy(n) = " +y);
 				
 			} catch (NumberFormatException e) {
 				System.out.println("Enter an integer");
